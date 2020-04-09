@@ -70,9 +70,9 @@
 				36C40D28243D4EFF009EBAD0 /* SceneDelegate.swift */,
 				36C40D50243D4F5E009EBAD0 /* LaunchScreen.storyboard */,
 				36C40D4B243D4F42009EBAD0 /* Font */,
-				36C40D46243D4F34009EBAD0 /* Controllers */,
-				36C40D42243D4F2B009EBAD0 /* Views */,
 				36C40D3D243D4F21009EBAD0 /* Models */,
+				36C40D42243D4F2B009EBAD0 /* Views */,
+				36C40D46243D4F34009EBAD0 /* Controllers */,
 				36C40D4E243D4F4B009EBAD0 /* Assets.xcassets */,
 				36C40D37243D4F01009EBAD0 /* Info.plist */,
 				36C40D2F243D4EFF009EBAD0 /* BMI_Calculator_Now.xcdatamodeld */,
@@ -100,8 +100,8 @@
 		36C40D46243D4F34009EBAD0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				36C40D47243D4F34009EBAD0 /* ResultViewController.swift */,
 				36C40D48243D4F34009EBAD0 /* CalculateViewController.swift */,
+				36C40D47243D4F34009EBAD0 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

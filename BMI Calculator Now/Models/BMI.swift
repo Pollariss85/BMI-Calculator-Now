@@ -1,9 +1,9 @@
 //
-//  BMI.swift
-//  BMI Calculator
+//  BMR.swift
+//  BMR Calculator
 //
-//  Created by Angela Yu on 29/08/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
+//  Created by Robert Harrison on 04/08/2020.
+//  Copyright © 2020 Robert Harrison. All rights reserved.
 //
 
 import UIKit

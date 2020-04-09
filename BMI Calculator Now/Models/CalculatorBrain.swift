@@ -2,8 +2,8 @@
 //  CalculatorBrain.swift
 //  BMI Calculator
 //
-//  Created by Angela Yu on 28/08/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
+//  Created by Robert Harrison on 04/08/2020.
+//  Copyright © 2020 Robert Harrison. All rights reserved.
 //
 
 import UIKit

@@ -25,12 +25,16 @@ class CalculateViewController: UIViewController {
     }
     @IBAction func ageSliderChanged(_ sender: UISlider) {
         let age = String(format: "%.0f", sender.value)
-        ageLabel.text = "\(age) yrs"
+        let ageSlider = Int(sender.value); sender.value = Float(ageSlider)
+        ageLabel.text = "\(age) ft"
+       
     }
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
-        let height = String(format: "%.1f", sender.value)
-        heightLabel.text = "\(height) ft"
+        let height = String(format: "%.0f", sender.value)
+            let heightSlider = Int(sender.value); sender.value = Float(heightSlider)
+        heightLabel.text = "\(height) in"
+        
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
@@ -40,10 +44,13 @@ class CalculateViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        let height = (heightSlider.value * 12)
-        let weight = weightSlider.value
+        let height = heightSlider.value 
+        let weight = (weightSlider.value * 703)
+        let age = (ageSlider.value * 12)
+   
+        print(weight, height, age)
 
-        calculatorBrain.calculateBMI(height: height, weight: weight)
+        calculatorBrain.calculateBMI(height: height, weight: weight, age: age)
         performSegue(withIdentifier: "goToResult", sender: self)
         
         AudioServicesPlaySystemSound(1520)

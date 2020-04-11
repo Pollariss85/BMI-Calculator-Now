@@ -25,8 +25,10 @@ struct CalculatorBrain {
         return bmi?.color ?? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
     
-    mutating func calculateBMI(height: Float, weight: Float) {
-        let bmiValue = (weight * 703) / (height * height)
+    mutating func calculateBMI(height: Float, weight: Float, age: Float) {
+        let bmiValue = ((weight) / ((height + age) * (height + age)))
+        print(bmiValue)
+        print(((weight) / ((height + age) * (height + age))))
 
         if bmiValue < 18.5 {
             bmi = BMI(value: bmiValue, advice: "You are Underweight", color: #colorLiteral(red: 0, green: 0.06638821214, blue: 0.837713778, alpha: 1))
